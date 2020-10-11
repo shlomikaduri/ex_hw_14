@@ -1,0 +1,11 @@
+[database]
+server1 ansible_host=3.129.17.248
+
+
+[my_servers:children]
+database
+
+[my_servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/etc/private.pem 
+ansible_python_interpreter=python3
